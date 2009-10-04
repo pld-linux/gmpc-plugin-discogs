@@ -12,14 +12,14 @@ Group:		X11/Applications/Sound
 Source0:	http://dl.sourceforge.net/musicpd/%{source_name}-%{version}.tar.gz
 # Source0-md5:	c9b96ee13eeccd5a56f09ae65ebf0472
 URL:		http://gmpc.wikia.com/wiki/GMPC_PLUGIN_DISCOGS
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.58
 BuildRequires:	automake
 BuildRequires:	gmpc-devel >= 0.19.0
 BuildRequires:	gtk+2-devel >= 2:2.4
+BuildRequires:	intltool => 0.21
 BuildRequires:	libmpd-devel >= 0.19.0
 BuildRequires:	libtool
 BuildRequires:	libxml2-devel
-BuildRequires:	gtk-webkit-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
