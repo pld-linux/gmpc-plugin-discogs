@@ -1,20 +1,18 @@
-# TODO:
-# - desc
-
 %define		source_name gmpc-discogs
 Summary:	DiscoGS art fetcher plugin for Gnome Music Player Client
-Summary(pl.UTF-8):Wtyczka DiscoGS dla odtwarzacza Gnome Music Player Client
+Summary(pl.UTF-8):	Wtyczka DiscoGS dla odtwarzacza Gnome Music Player Client
 Name:		gmpc-plugin-discogs
-Version:	0.19.0
+Version:	0.20.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
-Source0:	http://dl.sourceforge.net/musicpd/%{source_name}-%{version}.tar.gz
-# Source0-md5:	c9b96ee13eeccd5a56f09ae65ebf0472
+Source0:	http://downloads.sourceforge.net/musicpd/%{source_name}-%{version}.tar.gz
+# Source0-md5:	fb5b4b44089816cf9fa2ca8df572003b
 URL:		http://gmpc.wikia.com/wiki/GMPC_PLUGIN_DISCOGS
 BuildRequires:	autoconf >= 2.58
 BuildRequires:	automake
 BuildRequires:	gmpc-devel >= 0.19.0
+BuildRequires:	glib2-devel >= 2.16
 BuildRequires:	gtk+2-devel >= 2:2.4
 BuildRequires:	intltool => 0.21
 BuildRequires:	libmpd-devel >= 0.19.0
@@ -23,7 +21,8 @@ BuildRequires:	libxml2-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-TODO
+The DiscoGS plugin searches the database of www.discogs.com to find
+available images for the artists and albums in your music collection.
 
 %prep
 %setup -qn %{source_name}-%{version}
