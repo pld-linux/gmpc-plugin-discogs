@@ -11,13 +11,15 @@ Source0:	http://downloads.sourceforge.net/musicpd/%{source_name}-%{version}.tar.
 URL:		http://gmpc.wikia.com/wiki/GMPC_PLUGIN_DISCOGS
 BuildRequires:	autoconf >= 2.58
 BuildRequires:	automake
-BuildRequires:	gmpc-devel >= 0.19.0
+BuildRequires:	gettext-devel
 BuildRequires:	glib2-devel >= 2.16
+BuildRequires:	gmpc-devel >= 0.19.0
 BuildRequires:	gtk+2-devel >= 2:2.4
 BuildRequires:	intltool => 0.21
 BuildRequires:	libmpd-devel >= 0.19.0
 BuildRequires:	libtool
 BuildRequires:	libxml2-devel
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
